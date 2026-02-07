@@ -2,17 +2,16 @@
 
 My personal portable Claude Code configuration - general-purpose agents, commands, and settings that adapt to any project.
 
-Inspired by [Boris Cherny's setup](https://x.com/bcherny/status/2007179832300581177).
-
-## 📦 What's Inside
+## What's Inside
 
 ### Agents (`/.claude/agents/`)
-
-**🔍 explorer** - Autonomous codebase exploration and analysis
-**📋 planner** - Strategic planning with flexible execution
-**🔨 implementer** - End-to-end implementation with quality assurance
-**✅ verifier** - Comprehensive testing and validation
-**📚 librarian** - Documentation and knowledge management
+```
+explorer    - Autonomous codebase exploration and analysis
+planner     - Strategic planning with flexible execution
+implementer - End-to-end implementation with quality assurance
+verifier    - Comprehensive testing and validation
+librarian   - Documentation and knowledge management
+```
 
 All agents are **language-agnostic** and follow the **Boris approach**: flexible, autonomous, and pragmatic.
 
@@ -20,7 +19,7 @@ All agents are **language-agnostic** and follow the **Boris approach**: flexible
 
 **commit-push-pr** - One command to commit, push, and create PR
 
-## 🚀 Quick Start (Per Project)
+## Quick Start (Per Project)
 
 ### One-Shot Setup (Recommended)
 
@@ -53,7 +52,7 @@ claude init
 # Tell Claude: "Customize CLAUDE.md for this React/Python/Go project"
 ```
 
-## 🎯 How It Works
+## How It Works
 
 1. **General Agents** - Work with any language/framework
 2. **CLAUDE.md** - Project-specific instructions (created by `claude init`)
@@ -101,7 +100,7 @@ cp -r ~/claude-setup/.claude .
 # Review and commit the changes
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Project-Specific Agents
 
@@ -121,16 +120,10 @@ cd ~/my-project
 touch .claude/commands/project-deploy.md
 ```
 
-## 📚 Philosophy
+## Philosophy
 
 - **General-purpose base** - Agents work with any language
 - **CLAUDE.md for specifics** - Project context in version control
 - **Flexible & autonomous** - No strict workflows
 - **Portable** - Clone once, use everywhere
 - **Per-project** - Each repo gets its own `.claude/` setup
-
-## 📖 Resources
-
-- [Claude Code Docs](https://docs.claude.com/claude-code)
-- [Boris Cherny's Setup Thread](https://x.com/bcherny/status/2007179832300581177)
-- [Claude Code GitHub](https://github.com/anthropics/claude-code)
